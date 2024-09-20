@@ -1,0 +1,10 @@
+# Ignorar node_modules en ambas carpetas
+backend/node_modules
+frontend/node_modules
+
+# Ignorar archivos de entorno
+.env
+backend/.env
+backend/postgres/
+frontend/.env
+

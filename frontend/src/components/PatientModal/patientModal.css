@@ -1,0 +1,103 @@
+/* Desactivar hover cuando el modal está activo */
+.modal-active .patient-card:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+/* Mantener la interactividad dentro del modal */
+.modal-active .modal-content,
+.modal-active .close-modal {
+    pointer-events: all;
+}
+
+/* Estilos del overlay del modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(26, 27, 38, 0.8); /* Fondo oscuro semi-transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    pointer-events: none; /* Desactivar eventos por defecto */
+}
+
+/* Contenido del modal */
+.modal-content {
+    background-color: #1e2139; /* Fondo oscuro similar */
+    color: #f8f8f2; /* Texto claro */
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 600px;
+    min-width: 300px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Sombra similar */
+    position: relative;
+    pointer-events: all; /* Permitir eventos dentro del modal */
+}
+
+/* Estilos de los labels e inputs */
+label {
+    font-size: 1rem;
+    color: #f8f8f2; /* Consistencia con el esquema de color */
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="tel"],
+input[type="date"] {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 1rem;
+    background-color: #2e2f4f; /* Fondo del input */
+    color: #f8f8f2; /* Texto claro */
+    outline: none;
+}
+
+/* Grupo de radio buttons */
+.radio-group label {
+    display: inline-block;
+    margin-right: 1rem;
+    color: #f8f8f2; /* Texto claro */
+}
+
+input[type="radio"] {
+    margin-right: 0.5rem;
+}
+
+/* Estilos para el botón */
+button {
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    background-color: #6273a4; /* Botón con color acorde al esquema */
+    color: #f8f8f2;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff79c6; /* Color al pasar el cursor */
+}
+
+/* Acciones del modal */
+.modal-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+/* Botón de cancelar con estilo diferente */
+button[type="button"] {
+    background-color: #44475a; /* Color de fondo diferente para cancelar */
+}
+
+button[type="button"]:hover {
+    background-color: #ff5555; /* Rojo al pasar el cursor en cancelar */
+}

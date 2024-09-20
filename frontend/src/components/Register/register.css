@@ -1,0 +1,76 @@
+/* Estilos generales del formulario */
+.form {
+    background-color: #1e2139; /* Fondo oscuro similar */
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Sombra para darle profundidad */
+    max-width: 600px;
+    margin: 2rem auto; /* Centrar el formulario */
+}
+
+/* Estilos de los labels e inputs */
+label {
+    font-size: 1rem;
+    color: #f8f8f2; /* Consistencia con el esquema de color */
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="tel"],
+input[type="date"] {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 1rem;
+    background-color: #2e2f4f; /* Fondo del input */
+    color: #f8f8f2; /* Texto claro */
+    outline: none;
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.radio-group {
+    display: flex;        /* Aseguramos que se comporten como flexbox */
+    flex-direction: row;  /* Alineamos en fila horizontal */
+    gap: 1.5rem;          /* Espaciado entre los botones */
+    margin-bottom: 1rem;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;  /* Alineamos el texto y el radio button verticalmente */
+    color: #f8f8f2;       /* Color de texto */
+}
+.radio {
+    display: flex;
+    gap: 2rem; /* Espacio entre los radio buttons */
+  }
+  
+  /* Alinea los elementos dentro de la clase flex */
+  .flex label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Espacio entre el botón y el texto */
+  }
+.radio-group input[type="radio"] {
+    margin-right: 0.5rem; /* Espaciado entre el botón y la etiqueta */
+}
+
+
+/* Estilos para el botón */
+input[type="submit"] {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 8px;
+    background-color: #6273a4; /* Botón acorde al esquema */
+    color: #f8f8f2;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #ff79c6; /* Color al pasar el cursor */
+}
