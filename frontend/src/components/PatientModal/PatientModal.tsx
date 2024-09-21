@@ -39,12 +39,10 @@ export const PatientModal: React.FC<PatientModalProps> = ({ patient, onSave, onC
     };
   }, []);
 
-  // Optimización del formateo de la fecha solo para el input de tipo date
-  const formatDateForInput = (isoDate: string) => isoDate.split('T')[0]; // Simplificamos el formato
+  const formatDateForInput = (isoDate: string) => isoDate.split('T')[0];
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
-
     setFormData((prevFormData) => ({
       ...prevFormData,
       [name]: name === 'age' ? Number(value) : value,
@@ -53,16 +51,11 @@ export const PatientModal: React.FC<PatientModalProps> = ({ patient, onSave, onC
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
     try {
-      // Validación y formateo de la fecha
       const updatedData = { ...formData };
-
       if (formData.dateOfBirth) {
-        updatedData.dateOfBirth = new Date(formData.dateOfBirth).toISOString(); // Convertimos a ISO
+        updatedData.dateOfBirth = new Date(formData.dateOfBirth).toISOString();
       }
-
-      // Guardar los datos actualizados de manera asincrónica
       await onSave(updatedData);
     } catch (error) {
       console.error("Error while saving the patient data:", error);
@@ -72,6 +65,7 @@ export const PatientModal: React.FC<PatientModalProps> = ({ patient, onSave, onC
   return (
     <div className="modal-overlay">
       <div className="modal-content">
+        <span className="close-modal" onClick={onClose}>&times;</span> {/* Icono de cierre */}
         <form onSubmit={handleSubmit}>
           <label htmlFor="name">Name</label>
           <input
@@ -81,7 +75,6 @@ export const PatientModal: React.FC<PatientModalProps> = ({ patient, onSave, onC
             value={formData.name}
             onChange={handleChange}
           />
-
           <label htmlFor="age">Age</label>
           <input
             type="number"
@@ -90,7 +83,6 @@ export const PatientModal: React.FC<PatientModalProps> = ({ patient, onSave, onC
             value={formData.age}
             onChange={handleChange}
           />
-
           <p>Gender</p>
           <div className="radio-group">
             <label>
@@ -124,17 +116,15 @@ export const PatientModal: React.FC<PatientModalProps> = ({ patient, onSave, onC
               Other
             </label>
           </div>
-
           <label htmlFor="dateOfBirth">Date of Birth</label>
           <input
             type="date"
             id="dateOfBirth"
             name="dateOfBirth"
-            value={formatDateForInput(formData.dateOfBirth)} // Usamos el formato optimizado
+            value={formatDateForInput(formData.dateOfBirth)}
             onChange={handleChange}
           />
-
-          <label htmlFor="cityOfOrigin">City of Origins</label>
+          <label htmlFor="cityOfOrigin">City of Origin</label>
           <input
             type="text"
             id="cityOfOrigin"
@@ -142,7 +132,6 @@ export const PatientModal: React.FC<PatientModalProps> = ({ patient, onSave, onC
             value={formData.cityOfOrigin}
             onChange={handleChange}
           />
-
           <label htmlFor="hospitalOfOrigin">Hospital of Origin</label>
           <input
             type="text"
@@ -151,7 +140,6 @@ export const PatientModal: React.FC<PatientModalProps> = ({ patient, onSave, onC
             value={formData.hospitalOfOrigin}
             onChange={handleChange}
           />
-
           <label htmlFor="tutorName">Tutor Name</label>
           <input
             type="text"
@@ -160,7 +148,6 @@ export const PatientModal: React.FC<PatientModalProps> = ({ patient, onSave, onC
             value={formData.tutorName}
             onChange={handleChange}
           />
-
           <label htmlFor="tutorPhone">Tutor Phone</label>
           <input
             type="tel"
@@ -169,7 +156,6 @@ export const PatientModal: React.FC<PatientModalProps> = ({ patient, onSave, onC
             value={formData.tutorPhone}
             onChange={handleChange}
           />
-
           <div className="modal-actions">
             <button type="submit">Save</button>
             <button type="button" onClick={onClose}>Cancel</button>
