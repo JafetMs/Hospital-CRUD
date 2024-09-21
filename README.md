@@ -13,7 +13,7 @@ Se desea desarrollar una aplicación de registro de pacientes para un hospital i
 
 1. Clonar .env.template a .env y configurar las variables de entorno
 2. Ejecutar `npm install` para instalar las dependencias
-3. Base de datos provisionada en la nube por lo tanto es necesario el 3.1 ademas de que se necesita la imagen de postgresql
+3. Base de datos provisionada en la nube por lo tanto es necesario el 3.1 ademas de que se necesita la imagen de postgresql  
 3.1  En caso de necesitar base de datos local ejecutar `docker-compose up -d` para levantar los servicios deseados.
 4. Ejecutar `npm run dev` para levantar el proyecto en modo desarrollo
 
