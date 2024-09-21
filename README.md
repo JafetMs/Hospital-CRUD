@@ -6,6 +6,22 @@ Se desea desarrollar una aplicación de registro de pacientes para un hospital i
 - **Backend**: El backend fue realizado con Node.js, siguiendo una arquitectura limpia.
 - **Frontend**: Se utilizó React para el desarrollo de la interfaz de usuario.
 - **Funcionalidades**: La aplicación incluye un CRUD para gestionar pacientes, permitiendo la creación, lectura, actualización y eliminación de registros.
+  
+## Configuracion para poder ejecutar el proyecto
+
+#### BackEnd
+
+1. Clonar .env.template a .env y configurar las variables de entorno
+2. Ejecutar `npm install` para instalar las dependencias
+3. Base de datos provisionada en la nube por lo tanto es necesario el 3.1 ademas de que se necesita la imagen de postgresql
+3.1  En caso de necesitar base de datos local ejecutar `docker-compose up -d` para levantar los servicios deseados.
+4. Ejecutar `npm run dev` para levantar el proyecto en modo desarrollo
+
+
+
+#### Front-End
+1. Ejecutar `npm i` para instalar las dependencias de node
+2. Ejecutar `npm run dev` para ejecutar la aplicacion.
 
 ## Backend 
 
