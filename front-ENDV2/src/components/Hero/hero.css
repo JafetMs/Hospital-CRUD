@@ -1,0 +1,24 @@
+
+
+.hero__container{
+    /* max-width: 150rem; */
+    background-color: var(--darkBlue);
+    margin:  0 auto;
+    width: 95%;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.1);
+    color:rgba(128, 128, 128, 0.736);
+    padding: 7rem;
+    margin-top: 5rem;
+}
+
+
+
+.hero__container p{
+    font-size: 1.8rem;
+}
+
+.hero__container h2{
+    font-size: 5rem;
+    color: white;
+}

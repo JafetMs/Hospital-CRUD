@@ -1,0 +1,99 @@
+.registerForm{
+    background-color: var(--black);
+    /* background-color: #2c2f36;  */
+
+    color:white;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    /* border: solid rgb(47, 255, 0) 1px; */
+    width:90%;
+    margin:  0 auto;
+    margin-top: 4rem;
+    padding:4rem;
+    max-width: 110rem;
+    margin-top:5rem;
+}
+@media (width >= 768px) {
+     .registerForm{
+        width: 60%;
+     }
+}
+
+.registerForm label {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    margin:  0 auto;
+    width: 80%; /* Asegura que los labels se alineen con los inputs */
+}
+
+
+.registerForm input {
+    
+    background-color:transparent;
+    display: block;
+    width: 80%;
+    border: none; 
+    border-bottom: 1px solid var(--blackL); 
+    margin: 0 auto;
+    margin-top:.75rem;
+    margin-bottom: .75rem;
+    padding: .8rem;
+    outline: none; /* Quita el borde que aparece al hacer clic */
+    color:white;
+    font-size: 2rem;
+    
+}
+
+.registerForm input:last-of-type{
+    margin-bottom: 0;
+}
+
+.registerForm label{
+    display: block;
+}
+.registerForm .flexGender{
+    display: flex;
+    gap:4rem;
+    
+}
+
+.registerForm .submitPatient {
+    background-color: var(--darkBlue);
+    color: white; /* Establece un color de texto */
+    border: none;
+    border-radius: 8px;
+    margin-top: 2rem;
+    padding: 1rem 2rem; /* Ajuste de padding para un mejor diseño */
+    cursor: pointer; /* Cambia el cursor a pointer */
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+.registerForm .submitPatient:hover {
+    background-color: var(--lightBlue); /* Cambia a un color más claro cuando el mouse está encima */
+}
+
+.registerForm .submitPatient:active {
+    background-color: var(--lighterBlue); /* Cambia a un color aún más claro cuando se hace clic */
+}
+.flexGender {
+    display: flex;
+    justify-content: space-around; /* Distribuye los elementos equitativamente */
+    align-items: center; /* Alinea verticalmente los radio buttons y el texto */
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+    margin-top: 1.5rem; /* Añade un poco de margen superior */
+    margin-bottom: 2rem;
+}
+
+.flexGender label {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center; /* Alinea el texto y los radio buttons verticalmente */
+    width: 10%;
+}
+
+
+.flexGender input {
+    margin: 0;
+    padding: 0;
+    transform: scale(1.2); 
+}
