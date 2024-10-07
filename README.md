@@ -77,3 +77,23 @@ El frontend está diseñado para ofrecer una experiencia de usuario fluida y acc
 
 ![image](https://github.com/user-attachments/assets/29bdfafb-9766-4a99-b1d6-077f4d55805c)
 
+
+
+
+## Front End v2 - Versión Mejorada
+
+Esta actualización no solo optimiza la organización del código y el rendimiento, sino que también mejora notablemente los aspectos visuales, ofreciendo una experiencia de usuario más fluida y atractiva.
+### Home ( Falta )
+
+![image](https://github.com/user-attachments/assets/5a537180-17af-434e-81e2-5f786c5da358)
+
+
+### Patients
+![image](https://github.com/user-attachments/assets/04e7dce2-1fe1-4dfc-ad2a-6d894bd75212)
+
+
+### Register
+![image](https://github.com/user-attachments/assets/c09a08ca-4d07-4665-9497-690cbd562b5b)
+
+
+
