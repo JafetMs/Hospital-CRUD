@@ -1,4 +1,4 @@
-# Proyecto Hospital - Nativo Digital
+# Proyecto Hospital
 
 ## Descripción del Proyecto
 Se desea desarrollar una aplicación de registro de pacientes para un hospital infantil. Los pacientes son enviados de diferentes hospitales, y el sistema debe permitir registrar la información relevante de cada paciente. 
