@@ -50,14 +50,13 @@ Utilize **PostgreSQL** como sistema de gestión de bases de datos. La base de da
 
 ## Front End
 
-## Frontend
+
 
 Para el desarrollo del frontend, se utilizó React junto con Vite y TypeScript. A continuación se detallan las dependencias utilizadas:
 
 ### Dependencias
 - **react** - Biblioteca principal para construir interfaces de usuario.
 - **vite** - Herramienta de construcción y desarrollo rápido.
-- **typescript** - Lenguaje que añade tipado estático a JavaScript.
 - **axios** - Biblioteca para realizar solicitudes HTTP.
 - **react-icons** - Biblioteca de iconos para React.
 - **react-router-dom** - Biblioteca para la gestión de rutas en aplicaciones React.
@@ -65,24 +64,7 @@ Para el desarrollo del frontend, se utilizó React junto con Vite y TypeScript. 
 ### Estructura
 El frontend está diseñado para ofrecer una experiencia de usuario fluida y accesible, permitiendo la interacción con la API REST del backend de manera eficiente.
 
-### Algunas capturas
 
-![image](https://github.com/user-attachments/assets/2c010e0a-835e-4d0c-a15a-6c0102ca5ca4)
-
-![image](https://github.com/user-attachments/assets/236c6fa4-bea4-4b70-b5eb-e75d5fc067e7)
-
-![image](https://github.com/user-attachments/assets/2c050eef-e2c1-4051-92a1-381fe770110f)
-
-![image](https://github.com/user-attachments/assets/f9f8af18-4aa7-4b83-a95d-46322f4e8ca5)
-
-![image](https://github.com/user-attachments/assets/29bdfafb-9766-4a99-b1d6-077f4d55805c)
-
-
-
-
-## Front End v2 - Versión Mejorada
-
-Esta actualización no solo optimiza la organización del código y el rendimiento, sino que también mejora notablemente los aspectos visuales, ofreciendo una experiencia de usuario más fluida y atractiva.
 ### Home ( Falta )
 
 ![image](https://github.com/user-attachments/assets/5a537180-17af-434e-81e2-5f786c5da358)
@@ -90,6 +72,12 @@ Esta actualización no solo optimiza la organización del código y el rendimien
 
 ### Patients
 ![image](https://github.com/user-attachments/assets/04e7dce2-1fe1-4dfc-ad2a-6d894bd75212)
+
+![image](https://github.com/user-attachments/assets/59582265-976f-444f-b1eb-2d4846802e7c)
+
+![image](https://github.com/user-attachments/assets/55a81b8c-1692-4f9d-a959-e7ab12dc73e2)
+
+![image](https://github.com/user-attachments/assets/955c9ab6-f271-4e31-942a-42b28c14b9a5)
 
 
 ### Register
